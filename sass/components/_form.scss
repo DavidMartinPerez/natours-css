@@ -64,11 +64,31 @@
         border-radius: 50%;
         display: inline-block;
         position: absolute;
-        left:0;
-        top:-.1rem;
+        left:5px;
+        top: -.4rem;
+        backface-visibility: hidden;
 
         &::after{
-
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-primary;
+            opacity: 0;
+            transition: opacity .2s;
         }
+    }
+
+    &__radio-input {
+        display: none;
+    }
+
+    &__radio-input:checked + &__radio-label > &__radio-button::after{
+        opacity: 1;
     }
 }

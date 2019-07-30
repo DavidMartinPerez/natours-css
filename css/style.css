@@ -572,6 +572,23 @@ body {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
     text-align: center;
     cursor: pointer; }
+    .navigation__button::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      border-radius: inherit;
+      transition: all .4s;
+      background-color: #fff; }
+    .navigation__button:hover {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+      .navigation__button:hover::after {
+        transform: scaleX(1.6) scaleY(1.6);
+        opacity: 0; }
   .navigation__background {
     height: 6rem;
     width: 6rem;

@@ -22,11 +22,11 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Sobre Natours</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Tus beneficios</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Adventuras populares</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Historias</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Reserva</a></li>
+                    <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span>Sobre Natours</a></li>
+                    <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span>Tus beneficios</a></li>
+                    <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>03</span>Adventuras populares</a></li>
+                    <li class="navigation__item"><a href="#section-stories" class="navigation__link"><span>04</span>Historias</a></li>
+                    <li class="navigation__item"><a href="#section-book" class="navigation__link"><span>05</span>Reserva</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,12 +40,12 @@
                     <span class="heading-primary--sub"> Dale sentido a la vida <!-- Es dpmde ocurre lo mejor --><!-- is where life happens --></span>
                 </h1>
 
-                <a href="#" class="btn btn--white btn--animated"> Descubre nuestras aventuras <!--Discover our tours --></a>
+                <a href="#section-tours" class="btn btn--white btn--animated"> Descubre nuestras aventuras <!--Discover our tours --></a>
             </div>
         </header>
 
         <main>
-            <section class="section-about">
+            <section class="section-about" id="section-about">
                 <div class="u-center-text">
                     <h2 class="heading-secundary u-mb-big">
                         ¡Aventuras como nunca antes has visto! <!-- Exciting tours for adventurous people -->
@@ -75,7 +75,7 @@
                 </div>
             </section>
 
-            <section class="section-features">
+            <section class="section-features" id="section-features">
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -116,9 +116,9 @@
                 </div>
             </section>
 
-            <section class="section-tours">
-                <div class="u-center-text">
-                    <h2 class="heading-secundary u-mb-big">
+            <section class="section-tours" id="section-tours">
+                <div class="u-center-text" >
+                    <h2 class="heading-secundary u-mb-big" >
                         ¡Las aventuras más populares! <!-- Most popular tours -->
                     </h2>
                     <div class="row">
@@ -147,7 +147,7 @@
                                             <p class="card__price-only">Solo</p>
                                             <p class="card__price-value">295€</p>
                                         </div>
-                                        <a href="#" class="btn btn--white"> Reservar</a>
+                                        <a href="#popup" class="btn btn--white"> Reservar</a>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +177,7 @@
                                             <p class="card__price-only">Solo</p>
                                             <p class="card__price-value">495€</p>
                                         </div>
-                                        <a href="#" class="btn btn--white"> Reservar</a>
+                                        <a href="#popup" class="btn btn--white"> Reservar</a>
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +207,7 @@
                                             <p class="card__price-only">Solo</p>
                                             <p class="card__price-value">895€</p>
                                         </div>
-                                        <a href="#" class="btn btn--white"> Reservar</a>
+                                        <a href="#popup" class="btn btn--white"> Reservar</a>
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +219,7 @@
                 </div>
             </section>
 
-            <section class="section-stories">
+            <section class="section-stories" id="section-stories">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
                         <source src="img/video.mp4" type="video/mp4">
@@ -259,7 +259,7 @@
                             <div class="story__text">
                                 <h3 class="heading-tertiary u-mb-small"> Esta aventura fue el incio de una vida mejor.<!-- WOW, My life is completely diferent now --></h3>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, nulla ipsa. Delectus tempora nulla repellat dolores incidunt optio, quae voluptatem praesentium debitis atque cum. Blanditiis voluptatem eius quam maxime adipisci. Delectus tempora nulla repellat dolores incidunt optio.
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, nulla ipsa. Delectus tempora nulla repellat dolores incidunt optio, quae voluptatem praesentium debitis atque cum. Blanditiis voluptatem eius quam maxime adipisci. Delectus tempora nulla repellat dolores incidunt optio.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, nulla ipsa. Delectus tempora nulla repellat dolores incidunt optio, quae voluptatem praesentium debitis atque cum. Blanditiis voluptatem eius quam maxime adipisci. Delectus tempora nulla repellat dolores incidunt optio.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, nulla ipsa. Delectus tempora nulla repellat dolores incidunt optio, quae voluptatem praesentium debitis atque cum. Blanditiis voluptatem eius quam maxime adipisci. Delectus tempora nulla repellat dolores incidunt optio.
                                 </p>
                             </div>
                         </div>
@@ -269,7 +269,7 @@
                     </div>
             </section>
 
-            <section class="section-book">
+            <section class="section-book" id="section-book">
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
@@ -337,6 +337,24 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="foto de aventura" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="foto de aventura" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <div class="heading-secundary u-mb-small">Empieza tu reserva ahora</div>
+                    <div class="heading-tertiary u-mb-small">Importante &ndash; Por favor lea las condiciones antes de reservar.</div>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora odit ex facere delectus molestias tempore natus sed sapiente doloribus accusamus impedit dignissimos ea eaque, quod vitae nam, quos debitis! Perspiciatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, delectus nisi fuga optio dolore ea. Odio eligendi sequi temporibus.t, consectetur adipisicing elit. Tempora odit ex facere delectus molestias tempore natus sed sapiente doloribus accusamus impedit dignissimos ea eaque, quod vitae nam, quos debitis! Perspiciatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, delectus nisi fuga optio dolore ea. Odio eligendi sequi temporibus.t, consectetur adipisicing elit. Tempora odit ex facere delectus molestias tempore natus sed sapiente doloribus accusamus impedit dignissimos ea eaque, quod vitae nam, quos debitis! Perspiciatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    </p>
+                    <a href="#section-book" class="btn btn--primary">Reservar</a>
+                </div>
+            </div>
+        </div>
 
         <!--section class="grid-test">
             <div class="row">

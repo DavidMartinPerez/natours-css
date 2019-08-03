@@ -1,3 +1,12 @@
+/*
+phone -> 0-600px:  movil
+tab-port ->  600 - 900px: tablet
+tab-land -> 900-1200px: tablet rotada
+desktop -> 1200 - 1800: escritorio <- Main width
+big-desktop -> >1800: escritorio FHD+
+
+ORDEN Responsivo: base + typografia > general layout + grid > page layout > componentes
+*/
 *,
 *::after,
 *::before {
@@ -6,7 +15,17 @@
   box-sizing: inherit; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   padding: 2.5rem;
@@ -41,9 +60,6 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0); } }
-
-html {
-  font-size: 62.5%; }
 
 body {
   font-family: 'Lato', sans-serif;

@@ -13,3 +13,29 @@
     transform: translate(-50%, -50%);
     border-radius: 3px;
 }
+
+// MEDIA QUERYs
+
+/*
+phone -> 0-600px:  movil
+tab-port ->  600 - 900px: tablet
+tab-land -> 900-1200px: tablet rotada
+desktop -> 1200 - 1800: escritorio <- Main width
+big-desktop -> >1800: escritorio FHD+
+
+ORDEN Responsivo: base + typografia > general layout + grid > page layout > componentes
+*/
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content; }
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content; }
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) { @content; }
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content; }
+    }
+}

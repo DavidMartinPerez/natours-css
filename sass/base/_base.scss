@@ -7,6 +7,7 @@
 }
 
 html {
+    //Scroll suavisado
     scroll-behavior: smooth;
     // Esto define cuanto vale 1rem
     font-size: 62.5%; // 1rem == 10px/16px = 62.5%
@@ -27,4 +28,8 @@ html {
 body {
     padding: 2.5rem;
     box-sizing: border-box;
+
+    @include responsive(tab-port) {
+        padding: 0;
+    }
 }

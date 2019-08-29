@@ -26,6 +26,11 @@
         text-align: center;
         cursor: pointer;
 
+        @include responsive(tab-port) {
+            top: 3rem;
+            right: 3rem;
+        }
+
         &::after {
             content: '';
             display: inline-block;
@@ -60,6 +65,11 @@
         z-index: 1000;
 
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @include responsive(tab-port) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__nav {

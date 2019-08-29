@@ -13,6 +13,12 @@
     clip-path: polygon( 0 0, 100% 0 , 100% 75vh , 0 100% );
     -webkit-clip-path: polygon( 0 0, 100% 0 , 100% 75vh , 0 100% );
 
+    @include responsive(phone) {
+        $clip : 0 0, 100% 0 , 100% 85vh , 0 100%;
+        clip-path: polygon( $clip );
+        -webkit-clip-path: polygon( $clip );
+    }
+
     &__logo-box {
         position: absolute;
         top: 4rem;
